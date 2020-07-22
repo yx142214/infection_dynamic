@@ -1,0 +1,478 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+    }
+    
+    #main,
+    #main2,
+    #main3 {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #main {
+        z-index: 1;
+    }
+    
+    #main2 {
+        z-index: 2;
+    }
+    
+    #main3 {
+        z-index: 3;
+    }
+    
+    .back {
+        position: absolute;
+        left: 50%;
+        z-index: 99;
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
+    
+    .back button:hover {
+        color: rgb(106, 255, 255);
+    }
+    
+    .back button {
+        background: none;
+        border: none;
+        color: white;
+        font-weight: 1000;
+        font-size: 14px;
+        background-size: 100% 100%;
+        width: 100px;
+        height: 40px;
+        outline: none;
+        background-image: linear-gradient(to left, #355288, #0f378f);
+        border-radius: 10px;
+        border: rgba(127, 255, 212, 0.719) 1.5px solid;
+        box-shadow: 0 0 1px 1px #313ac7
+    }
+    
+    #left {
+        height: 90%;
+        width: 20%;
+        background-image: url("../images/news.png");
+        background-size: 100% 100%;
+        position: absolute;
+        top: 4%;
+        margin: 10px;
+        z-index: 99;
+        color: white;
+        font-size: 13px;
+    }
+    
+     ::-webkit-scrollbar {
+        display: none;
+        /* Chrome Safari */
+    }
+    
+    .datalist,
+    .news {
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE 10+ */
+    }
+    
+    .data {
+        margin: 4px;
+        padding: 2px;
+        /* background: #1f7197f8; */
+        background: url('../images/datalist.png');
+        background-size: 100% 100%;
+        margin-bottom: 5px;
+        width: 90%;
+        margin-left: 4.5%;
+    }
+    
+    .title a {
+        font-size: 15px;
+        font-weight: 1000;
+        color: rgb(106, 255, 255);
+        border-bottom: 1.5px solid rgb(106, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    #left p {
+        margin: 5px;
+    }
+    
+    #left hr {
+        position: absolute;
+        top: 9.8%;
+        width: 80%;
+        margin-left: 10%;
+        border: none;
+        height: 2px;
+        background-color: white;
+    }
+    
+    .news-title {
+        position: absolute;
+        color: orange;
+        font-size: 14px;
+        font-weight: 1000;
+        text-align: center;
+        margin: 0;
+        left: 48%;
+        transform: translateX(-50%);
+        top: 10px;
+    }
+    
+    .title a:hover {
+        color: rgb(126, 200, 250);
+        border-color: rgb(126, 200, 250);
+    }
+    
+    .data-title img {
+        margin-right: 5px;
+    }
+    
+    .news-title button {
+        background: none;
+        background-image: url('../images/news-bg.png');
+        background-size: 100% 100%;
+        border: none;
+        outline: none;
+        color: turquoise;
+        width: 260px;
+        height: 45px;
+        font-weight: 1000;
+        padding-bottom: 8px;
+    }
+    
+    .origin {
+        color: orange;
+        font-weight: bolder;
+    }
+    
+    .origin img {
+        vertical-align: top;
+    }
+    
+    .time img {
+        width: 18px;
+        vertical-align: bottom;
+        margin-right: 5px;
+    }
+    
+    .title img {
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    
+    .news {
+        position: relative;
+        height: 86%;
+        top: 100%;
+        transform: translateY(-102%);
+        overflow-y: scroll;
+    }
+    
+    #right {
+        height: 80%;
+        width: 18%;
+        position: absolute;
+        right: 10px;
+        top: 10%;
+        z-index: 99;
+        background: url("../images/news.png");
+        background-size: 100% 100%;
+        color: white;
+    }
+    
+    table {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .top {
+        position: absolute;
+        top: 0;
+        z-index: 99;
+    }
+    
+    .top>img {
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .top p {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        cursor: pointer;
+        color: white;
+        margin: 0;
+        font-weight: 1000;
+    }
+    
+    .data-title {
+        margin-top: 20px;
+    }
+    
+    .data-title button {
+        background: none;
+        border: none;
+        background-image: url('../images/news-bg.png');
+        background-size: 100% 100%;
+        width: 230px;
+        height: 40px;
+        padding-bottom: 7px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        outline: none;
+        color: turquoise;
+        font-weight: 1000;
+        opacity: 0.9;
+    }
+    
+    .data-head,
+    .data-body {
+        overflow: hidden;
+        background-image: linear-gradient(to left, #355288, #0f378f);
+        box-shadow: 0 0 1px 1px #00b7a6;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    
+    .data-head p,
+    .data-body p,
+    dd p {
+        margin: 0;
+        width: 24%;
+        float: left;
+        padding: 0;
+        margin-left: 1%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 1000;
+        text-align: center;
+    }
+    
+    .data-body {
+        margin-top: 2px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-size: 100% 100%;
+        border-radius: 3px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .data-body p {
+        font-size: 13px;
+        /* font-weight: normal; */
+    }
+    
+    .data-all {
+        height: 100%;
+    }
+    
+    .datalist {
+        overflow-y: scroll;
+        position: relative;
+        height: 80%;
+        top: 100%;
+        margin-top: -110px;
+        transform: translateY(-100%);
+    }
+    
+    .data-name {
+        color: #eee;
+    }
+    
+    .data-current {
+        color: turquoise;
+    }
+    
+    .data-total {
+        color: orange;
+    }
+    
+    .data-input {
+        color: rgb(98, 98, 255);
+    }
+    
+    .china-data {
+        width: 90%;
+        margin-left: 5%;
+        overflow: hidden;
+    }
+    
+    .up,
+    .down {
+        width: 48%;
+        margin-left: 1.5%;
+        /* margin-left: 5%; */
+        float: left;
+    }
+    
+    .up p,
+    .down p {
+        margin: 6px;
+        text-align: center;
+    }
+    
+    .up div p:nth-of-type(1) {
+        padding-top: 10px;
+    }
+    
+    .up div p:nth-of-type(3) {
+        padding-bottom: 10px;
+    }
+    
+    .down div p:nth-of-type(1) {
+        padding-top: 10px;
+    }
+    
+    .down div p:nth-of-type(3) {
+        padding-bottom: 10px;
+    }
+    
+    .up div:nth-of-type(1) {
+        background: url('../images/datalist.png');
+        background-size: 100% 100%;
+    }
+    
+    .up div:nth-of-type(2) {
+        background: url('../images/datalist.png');
+        background-size: 100% 100%;
+    }
+    
+    .down div:nth-of-type(1) {
+        background: url('../images/datalist.png');
+        background-size: 100% 100%;
+    }
+    
+    .down div:nth-of-type(2) {
+        background: url('../images/datalist.png');
+        background-size: 100% 100%;
+    }
+    
+    .datalist-name {
+        font-weight: 1000;
+        text-align: center;
+        margin: 10px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+        background-image: linear-gradient(to left, #355288, #0f378f);
+        box-shadow: 0 0 1px 1px #00b7a6;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .layui-nav-tree {
+        width: 90% !important;
+        margin-left: 5%;
+    }
+    
+    dd p {
+        font-size: 12px !important;
+        font-weight: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    dl dd {
+        overflow: hidden;
+    }
+    
+    .data-body p {
+        font-size: 12px;
+    }
+    
+    .dataChild .layui-nav {
+        background: none !important;
+    }
+    
+    .dataChild .layui-nav-item {
+        background: linear-gradient(to left, #355288, #0f378f);
+        margin-top: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 0 0 1px 1px #00b7a6;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .dataChild .layui-nav-tree .layui-nav-bar {
+        display: none;
+    }
+    
+    .dataChild .layui-nav-tree .layui-nav-item a:hover {
+        transition: none !important;
+        background: linear-gradient(to left, #355288, #0f378f);
+        margin-top: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 0 0 1px 1px #00b7a6;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .main-nav {
+        position: absolute;
+        width: 20%;
+        left: 40%;
+        top: 10%;
+        z-index: 4;
+    }
+    
+    .layui-input-block {
+        margin-left: 0 !important;
+    }
+    
+    .layui-select-title>input {
+        background: linear-gradient(to left, #355288, #0f378f) !important;
+        color: aquamarine;
+        font-weight: 1000;
+        border: 1px solid rgba(127, 255, 212, 0.596);
+    }
+    
+    .layui-form-select dl {
+        background: linear-gradient(to left, #355288, #0f378f) !important;
+        color: aquamarine;
+        font-weight: 1000;
+    }
+    
+    .layui-form-select dl dd:hover {
+        background: rgba(90, 159, 250, 0.651) !important;
+    }
+    
+    .layui-form-select dl dd.layui-this {
+        background: rgba(106, 255, 255, 0.582) !important;
+    }
+    
+    .top form {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        width: auto;
+        text-align: center !important;
+    }
+    
+    .top .layui-select-title>input {
+        background: none !important;
+        text-align: center;
+        border-radius: 10rem;
+        margin-top: 3.5%;
+        box-shadow: 0 0 2px 1px #5f98c5;
+    }
+    
+    .top form input {
+        z-index: 9999 !important;
+    }
